@@ -1,0 +1,77 @@
+html,body,ul,li,p,span,div{
+  margin:0;
+  padding:0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.dateDefaultCss{
+  color: black;
+  cursor: pointer
+}
+.dateActiveCss{
+  color: white;
+  cursor: pointer;
+  background:#317ef2;
+}
+.disableDateCss{
+  color: #bfbfbf;
+  cursor: default
+}
+.custom-calendar {
+  .calendar-title {
+    padding:0 30px 0 10px;
+    .left {
+      font-size: 105%;
+    }
+    .right {
+      width:70px;
+      border:solid 1px #dddddd;
+      padding:0 10px;
+      span{
+        font-size: 20px;
+      }
+      span:hover {
+        cursor: pointer;
+        color: #3a82fa;
+      }
+    }
+    margin-bottom: 5px;
+    color: #000;
+  }
+  .calendar-body {
+    padding-bottom:10px;
+    .bodyTitleBox{
+      .body-title {
+        width:14%;
+      }
+    }
+    .calen-content{
+      flex-wrap:wrap;
+    }
+    .calen-cell {
+      color: #000;
+      display: table-cell;
+      text-align: center;
+      vertical-align: middle;
+      width:14%;
+      margin-bottom: 5px;
+      .dateSpan{
+        padding: 3px;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+        width:20px;
+        height:20px;
+        margin:0 auto;
+      }
+      div{
+        width: 3px;
+        height: 3px;
+        border-radius: 50%;
+        background: #3a82fa;
+        margin: 0 auto;
+      }
+    }
+  }
+}
