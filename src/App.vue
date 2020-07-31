@@ -1,6 +1,10 @@
 <template>
   <div id="app">
-    <calendar/>
+    <calendar>
+      <template #calendarTitle>
+        <span>标题</span>
+      </template>
+    </calendar>
   </div>
 </template>
 <script>
